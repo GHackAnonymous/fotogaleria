@@ -28,7 +28,7 @@
     <div class="row">
         <div class="large-12 columns">
             <hr />
-            <p style="font-size:80%; text-align: center;">&copy; 2014 Ion Jaureguialzo Sarasola</p>
+            <p style="font-size:80%; text-align: center;">&copy; 2015 Ion Jaureguialzo Sarasola</p>
         </div>
     </div>
     

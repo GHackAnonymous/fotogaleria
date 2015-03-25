@@ -22,6 +22,23 @@
             </div>
         </div>
         <div class="large-8 medium-8 columns">
+          <ul class="large-block-grid-5 medium-block-grid-5 small-block-grid-3 clearing-thumbs" data-clearing>
+              <?php
+              define('IMAGENES', 'fotos');
+
+              if (is_dir(IMAGENES)) {
+                  $handle = opendir(IMAGENES);
+
+                  foreach (glob(IMAGENES . '/*.jpg') as $filename) {
+                      echo '<li><a class="th" href="fotos/' . basename($filename) . '"><img alt="" src="miniaturas/' . basename($filename) . '" /></a></li>';
+                  }
+
+                  closedir($handle);
+              } else {
+                  echo '<p>ERROR: No hay imágenes.</p>';
+              }
+              ?>
+          </ul>
         </div>
     </div>
 
